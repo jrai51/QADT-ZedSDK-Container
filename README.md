@@ -11,11 +11,12 @@ In order to run this docker container on an Ubuntu laptop, you will need to inst
 
 If the above link doesn't work, try: https://www.tecmint.com/install-qemu-kvm-ubuntu-create-virtual-machines/. However, don't install anything past `$ sudo apt install qemu-kvm virt-manager virtinst libvirt-clients bridge-utils libvirt-daemon-system -y`. The rest is irrelevant visualization tools. The important thing is to get qemu installed.
 
-You can check QEMU is installed by running: 
+You can check QEMU is installed by running:
 
 `$ apt show qemu-system-x86`
 
 The Dockerfile is included in this repository. You can use it to create a container by running 
+
 `$ docker build -t your_container_name_here . `
 
 Once the image has been built, you can run an interactive version of the container with:
