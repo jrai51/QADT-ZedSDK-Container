@@ -21,5 +21,8 @@ The Dockerfile is included in this repository. You can use it to create a contai
 
 Once the image has been built, you can run an interactive version of the container with:
 
-`$ docker run -it --rm --platform linux/arm64 your_container_name_here`
+`$ docker run -it --rm --platform linux/arm64 your_container_name_hereker run -it --rm --platform linux/arm64 your_container_name_here`
 
+Once this command has been run you will be in a Jetson environment with the Zed SDK and necessary C++ code installed. 
+ 
+`cd tensor_rt/build; cmake ..` 
